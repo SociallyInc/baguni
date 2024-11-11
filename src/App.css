@@ -4,9 +4,29 @@
 }
 
 .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
   background-color: #00CA9A;
-  padding: 20px;
-  text-align: center;
+}
+
+.logo {
+  height: 40px;
+}
+
+.download-button {
+  padding: 10px 20px;
+  background-color: white; 
+  color: #00CA9A; 
+  border: 2px solid #00CA9A; 
+  border-radius: 8px; 
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.download-button:hover {
+  background-color: #f0f0f0; /* 호버 시 약간 어두운 배경색 */
 }
 
 .section {
@@ -14,7 +34,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid #ffffff;
 }
 
 .section img {
@@ -33,6 +53,31 @@
   color: white;
   border: none;
   cursor: pointer;
+}
+
+.uphighlight-section {
+  background-color: #00CA9A; 
+  color: white;
+  text-align: left;
+  padding: 20px 20px 40px 20px;
+  margin: 0;
+}
+
+.uphighlight-section h2 {
+  margin-bottom: 10px;
+}
+
+.uphighlight-section p {
+  margin-bottom: 20px;
+}
+
+.uphighlight-section button {
+  padding: 5px 10px;
+  background-color: white;
+  color: #00CA9A;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
 }
 
 .footer {
@@ -66,7 +111,7 @@
   color: white;
   text-align: center;
   padding: 40px 20px;
-  margin: 0; /* 위아래 여백 제거 */
+  margin: 0;
 }
 
 .highlight-section h2 {
