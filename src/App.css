@@ -1,0 +1,87 @@
+.App {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.header {
+  background-color: #00CA9A;
+  padding: 20px;
+  text-align: center;
+}
+
+.section {
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.section img {
+  max-width: 200px;
+  height: auto;
+}
+
+.section .text {
+  max-width: 600px;
+}
+
+.section button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #00CA9A;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e0e0e0;
+  padding: 20px;
+  color: #333;
+}
+
+.footer-left,
+.footer-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-left p,
+.footer-right p {
+  margin: 0;
+  padding: 2px 0;
+}
+
+.footer-right {
+  border-left: 1px solid #333;
+  padding-left: 100px;
+}
+
+.highlight-section {
+  background-color: #00CA9A; 
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  margin: 0; /* 위아래 여백 제거 */
+}
+
+.highlight-section h2 {
+  margin-bottom: 10px;
+}
+
+.highlight-section p {
+  margin-bottom: 20px;
+}
+
+.highlight-section button {
+  padding: 5px 10px;
+  background-color: white;
+  color: #00CA9A;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
