@@ -85,6 +85,10 @@
   border-radius: 6px;
 }
 
+.uphighlight-section button:hover {
+  background-color: #f0f0f0; /* 호버 시 약간 어두운 배경색 */
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -135,3 +139,8 @@
   cursor: pointer;
   border-radius: 8px;
 }
+
+.highlight-section button:hover {
+  background-color: #f0f0f0; /* 호버 시 약간 어두운 배경색 */
+}
+  
