@@ -1,37 +1,56 @@
-// src/App.js
 import React from 'react';
 import './App.css';
 import Header from './components/Header';
 import Section from './components/Section';
 import Footer from './components/Footer';
+import img1 from './assets/봉사 모집.png';
+import img2 from './assets/봉사동아리소개.png';
+import img3 from './assets/봉사자 정보.png';
+import img4 from './assets/지도_아동센터.png';
+import img5 from './assets/지도_유기견산책.png';
+import img6 from './assets/커뮤니티_후기.png';
 
 function App() {
+  const handleDownloadClick = () => {
+    window.location.href = "https://play.google.com/store/games?hl=ko";
+  };
+
   return (
     <div className="App">
       <Header />
       <div className="uphighlight-section">
-        <p>복지시설과 근처 사람들과의 따뜻한 연결</p>
-        <h2><strong>우리 동네 봉사, <br/> 소통을 손쉽게</strong></h2>
-        <br/>
-        <button><strong>앱 다운로드</strong></button>
+        <div>
+          <p>복지시설과 근처 사람들과의 따뜻한 연결</p>
+          <h2><strong>우리 동네 봉사,</strong></h2>
+          <h2><strong>소통을 손쉽게</strong></h2>
+          <br/>
+          <button onClick={handleDownloadClick}><strong>앱 다운로드</strong></button>
+        </div>
+
+        <div className="image-container">
+          <img src={img1} alt="img 1" className="phone-image phone-image-1" />
+          <img src={img2} alt="img 2" className="phone-image phone-image-2" />
+          <img src={img6} alt="img 6" className="phone-image phone-image-6" />
+        </div>
       </div>
+
       <Section
         title={
-        <>
-          우리 동네는 도움이 필요한
-          <br/>
-          복지시설이 없을까?
-        </>
-      }
-      description={
-        <>
-          내 일상 속 지역 위주로 
-          <br/>
-          봉사 가능한 복지시설을 확인해보세요.
-        </>
-      }
-      imgSrc=""
-    />
+          <>
+            우리 동네는 도움이 필요한
+            <br/>
+            복지시설이 없을까?
+          </>
+        }
+        description={
+          <>
+            내 일상 속 지역 위주로 
+            <br/>
+            봉사 가능한 복지시설을 확인해보세요.
+          </>
+        }
+        imgSrc={img3}
+      />
 
       <Section
         title={
@@ -64,7 +83,7 @@ function App() {
       <div className="highlight-section">
         <h2>다양한 봉사 혜택을 누려보세요! <br></br> 봉사 시간 채우고 무료 쿠폰 증정!(12월까지 진행)</h2>
         <p><strong>지금 바로 시작하세요</strong></p>
-        <button><strong>앱 다운로드</strong></button>
+        <button onClick={handleDownloadClick}><strong>앱 다운로드</strong></button>
       </div>
       <Footer />
     </div>

@@ -1,4 +1,3 @@
-// src/components/Section.js
 import React from 'react';
 
 function Section({ title, description, buttonText, imgSrc }) {
@@ -8,7 +7,7 @@ function Section({ title, description, buttonText, imgSrc }) {
         <h2>{title}</h2>
         <p>{description}</p>
       </div>
-      {imgSrc && <img src={imgSrc} alt={title} />}
+      {imgSrc && <img src={imgSrc} alt="Section Image" className="section-image" />}
     </div>
   );
 }

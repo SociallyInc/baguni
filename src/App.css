@@ -1,6 +1,12 @@
 .App {
-  font-family: Arial, sans-serif;
+  font-family: Pretendard;
   color: #333;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .header {
@@ -10,41 +16,47 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px;
+  padding: 6px;
   background-color: #00CA9A;
-  z-index: 10;
   box-sizing: border-box;
+  padding-left: 260px;
+  padding-right: 240px;
 }
 
 .logo {
-  height: 40px;
+  height: 28px;
 }
 
 .download-button {
-  padding: 10px 20px;
+  padding: 5px 10px;
   background-color: white; 
   color: #00CA9A; 
   border: 2px solid #00CA9A; 
-  border-radius: 8px; 
+  border-radius: 6px; 
   cursor: pointer;
   font-weight: bold;
+  font-size: 11px;
 }
 
 .download-button:hover {
-  background-color: #f0f0f0; /* 호버 시 약간 어두운 배경색 */
+  background-color: #f0f0f0; 
 }
 
 .section {
-  padding: 50px;
+  padding: 30px;
   display: flex;
+  padding-left: 280px;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #ffffff;
+  border-top: 100px solid #ffffff;
+  border-bottom: 100px solid #ffffff;
 }
 
-.section img {
-  max-width: 200px;
+.section-image {
+  max-width: 300px; /* 이미지 크기 조절 */
   height: auto;
+  margin-left: 20px; /* 텍스트와의 간격 조절 */
+  margin-right: 250px;
 }
 
 .section .text {
@@ -61,23 +73,27 @@
 }
 
 .uphighlight-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 90px;
+  padding-top: 0;
+  padding-left: 275px;
   background-color: #00CA9A; 
   color: white;
-  text-align: left;
-  padding: 20px 20px 40px 20px;
-  margin: 0;
 }
 
 .uphighlight-section h2 {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .uphighlight-section p {
-  margin-bottom: 20px;
+  margin-top: 90px;
+  margin-bottom: 30px;
 }
 
 .uphighlight-section button {
-  padding: 5px 10px;
+  padding: 8px 20px;
   background-color: white;
   color: #00CA9A;
   border: none;
@@ -86,7 +102,71 @@
 }
 
 .uphighlight-section button:hover {
-  background-color: #f0f0f0; /* 호버 시 약간 어두운 배경색 */
+  background-color: #f0f0f0;
+}
+
+.text-content {
+  flex: 1;
+  min-width: 300px; /* 텍스트 영역이 줄어들지 않도록 최소 너비 설정 */
+  max-width: 500px; /* 텍스트 영역의 최대 너비 설정 */
+  text-align: left;
+}
+
+.image-container {
+  flex-shrink: 0; /* 이미지 컨테이너의 크기 고정 */
+  width: 600px; /* 이미지 컨테이너의 너비 고정 */
+  height: 400px;
+  display: flex;
+  position: relative;
+  top: 20px;
+}
+
+.phone-image {
+  position: absolute;
+  width: 150px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.phone-image-1 {
+  top: 120px;
+  left: 50px;
+  transform: rotate(-8deg);
+}
+
+.phone-image-2 {
+  top: 110px;
+  left: 170px;
+  transform: rotate(0deg);
+}
+
+.phone-image-6 {
+  top: 120px;
+  left: 295px;
+  transform: rotate(8deg);
+}
+
+.phone-image:hover {
+  transform: scale(1.1); 
+}
+
+/* 작은 화면에서는 이미지가 아래로 내려가도록 설정 */
+@media (max-width: 768px) {
+  .uphighlight-section {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .text-content {
+    max-width: 100%; /* 작은 화면에서 텍스트 영역의 너비 제한 해제 */
+  }
+
+  .image-container {
+    width: 100%; /* 이미지 컨테이너가 전체 너비를 차지하도록 설정 */
+    justify-content: center;
+    margin-top: 20px; /* 텍스트와 이미지 사이에 여백 추가 */
+  }
 }
 
 .footer {
