@@ -21,6 +21,7 @@ html, body {
   box-sizing: border-box;
   padding-left: 260px;
   padding-right: 240px;
+  z-index: 1000;
 }
 
 .logo {
@@ -53,10 +54,18 @@ html, body {
 }
 
 .section-image {
-  max-width: 300px; /* 이미지 크기 조절 */
+  width: 200px;
   height: auto;
-  margin-left: 20px; /* 텍스트와의 간격 조절 */
-  margin-right: 250px;
+  object-fit: contain;
+  margin-left: 0px; /* 텍스트와의 간격 조절 */
+  margin-right: 0px;
+}
+
+.section-image3 {
+  width: 300px; /* 이미지 크기 조절 */
+  height: auto;
+  object-fit: contain;
+  margin-left: 50px; /* 텍스트와의 간격 조절 */
 }
 
 .section .text {
@@ -118,6 +127,7 @@ html, body {
   height: 400px;
   display: flex;
   position: relative;
+  gap: 20px;
   top: 20px;
 }
 
@@ -174,17 +184,29 @@ html, body {
   justify-content: space-between;
   align-items: center;
   background-color: #e0e0e0;
-  padding: 20px;
+  padding: 60px 250px; /* 좌우 여백 조정 */
   color: #333;
 }
 
-.footer-left,
-.footer-right {
-  display: flex;
-  flex-direction: column;
+.footer-left {
+  flex: 1;
+  text-align: left;
 }
 
-.footer-left p,
+.footer-right {
+  flex: 1;
+  text-align: right;
+  padding-left: 20px; /* 선과 오른쪽 콘텐츠 사이의 여백 추가 */
+  border-left: 1px solid #333; /* 중간 선 */
+  margin-left: 40px; /* 중간 선을 왼쪽으로 이동 */
+}
+
+.footer-left p{
+  margin: 0;
+  padding: 2px 0;
+  font-size: 9pt;
+}
+
 .footer-right p {
   margin: 0;
   padding: 2px 0;
@@ -200,7 +222,10 @@ html, body {
   color: white;
   text-align: center;
   padding: 40px 20px;
-  margin: 0;
+  margin: 0 auto; /* 가운데 정렬 */
+  max-width: 700px;
+  border-radius: 36px;
+  margin-bottom: 150px;
 }
 
 .highlight-section h2 {

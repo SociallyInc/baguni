@@ -5,9 +5,9 @@ function Footer() {
   return (
     <footer className="footer">
         <div className="footer-left">
-            <p>(주)소셜리</p>
+            <p><strong>(주)소셜리</strong></p>
             <br/>
-            <p>대표: 유재민 | 사업자번호: 779-81-03228</p>
+            <p><strong>대표:</strong> 유재민 | <strong>사업자번호:</strong> 779-81-03228</p>
             <br/>
             <p>문의: 카카오 비즈니스 채널</p>
             <p>Email: socially@socially.co.kr</p>
