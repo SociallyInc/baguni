@@ -54,13 +54,30 @@ html, body {
   color: white;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* 완전히 투명 */
+    transform: translateY(20px); /* 아래 위치 */
+  }
+  100% {
+    opacity: 1; /* 완전히 보임 */
+    transform: translateY(0); /* 원래 위치 */
+  }
+}
+
 .uphighlight-section h2 {
   margin-bottom: 15px;
+  opacity: 0; /* 초기에는 투명 */
+  transform: translateY(20px); /* 약간 아래로 이동 */
+  animation: fadeIn 1s ease-out 0.2s forwards; /* 애니메이션 정의 */
 }
 
 .uphighlight-section p {
   margin-top: 90px;
   margin-bottom: 30px;
+  opacity: 0; /* 초기에는 투명 */
+  transform: translateY(20px); /* 약간 아래로 이동 */
+  animation: fadeIn 1s ease-out 0.2s forwards; /* 애니메이션 정의 */
 }
 
 .uphighlight-section button {
@@ -70,10 +87,16 @@ html, body {
   border: none;
   cursor: pointer;
   border-radius: 6px;
+  opacity: 0; /* 초기에는 투명 */
+  transform: translateY(20px); /* 약간 아래로 이동 */
+  animation: fadeIn 1s ease-out 0.2s forwards; /* 애니메이션 정의 */
 }
 
 .uphighlight-section button:hover {
   background-color: #f0f0f0;
+  opacity: 0; /* 초기에는 투명 */
+  transform: translateY(20px); /* 약간 아래로 이동 */
+  animation: fadeIn 1s ease-out 0.2s forwards; /* 애니메이션 정의 */
 }
 
 .text-content {
@@ -101,21 +124,27 @@ html, body {
 }
 
 .phone-image-1 {
-  top: 120px;
+  top: 100px;
   left: 50px;
-  transform: rotate(-8deg);
+  transform: rotate(-8deg) translateY(20px);
+  opacity: 0; /* 초기에는 투명 */
+  animation: fadeIn 1s ease-out 0.2s forwards; /* 애니메이션 정의 */
 }
 
 .phone-image-2 {
-  top: 110px;
+  top: 90px;
   left: 170px;
-  transform: rotate(0deg);
+  transform: rotate(0deg) translateY(20px);
+  opacity: 0; /* 초기에는 투명 */
+  animation: fadeIn 1s ease-out 0.2s forwards; /* 애니메이션 정의 */
 }
 
 .phone-image-6 {
-  top: 120px;
+  top: 100px;
   left: 295px;
-  transform: rotate(8deg);
+  transform: rotate(8deg) translateY(20px);
+  opacity: 0; /* 초기에는 투명 */
+  animation: fadeIn 1s ease-out 0.2s forwards; /* 애니메이션 정의 */
 }
 
 .phone-image:hover {
