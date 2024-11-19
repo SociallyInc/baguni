@@ -161,7 +161,7 @@ html, body {
   text-align: left; /* 왼쪽 정렬로 변경 */
   border-left: 1px solid #bdbdbd; /* 중간 선 색상 변경 */
   padding-left: 30px; /* 선과 텍스트 간격*/
-  margin-left: 300px; /* 불필요한 여백 제거 */
+  margin-left: 240px; /* 불필요한 여백 제거 */
   height: 120px;
   display: flex;
   flex-direction: column;
@@ -217,9 +217,6 @@ html, body {
 }
 
 .highlight-section {
-  opacity: 0; /* 처음에는 보이지 않음 */
-  transform: translateY(50px); /* 아래에서 위로 이동 */
-  transition: opacity 1s ease, transform 1s ease; /* 부드러운 애니메이션 */
   background: 
     linear-gradient(135deg, #00CA9A, #f3ff6e);
   color: white;
@@ -232,10 +229,6 @@ html, body {
   position: relative; /* 레이아웃 유지 */
 }
 
-.highlight-section.visible {
-  opacity: 1; /* 요소가 보이도록 */
-  transform: translateY(0); /* 원래 위치로 이동 */
-}
 
 .highlight-section h2 {
   margin-bottom: 10px;
