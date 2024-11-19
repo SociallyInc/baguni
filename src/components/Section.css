@@ -1,0 +1,56 @@
+.section {
+    opacity: 0; /* 처음에는 보이지 않음 */
+    transform: translateY(50px); /* 아래에서 위로 이동 */
+    transition: opacity 1.2s ease, transform 1.2s ease; /* 1.2초로 느리게 */
+    padding: 30px;
+    display: flex;
+    padding-left: 280px;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 80px solid #ffffff;
+    border-bottom: 110px solid #ffffff;
+  }
+  
+  .section.visible {
+    opacity: 1; /* 요소가 보이도록 */
+    transform: translateY(0); /* 원래 위치로 이동 */
+  }
+  
+  .text {
+    margin-bottom: 20px;
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* 이미지 간 간격 */
+  }
+  
+  .section-image {
+    width: 160px;
+    height: auto;
+    object-fit: contain;
+    margin-left: -100px; /* 텍스트와의 간격 조절 */
+    margin-right: 100px;
+  }
+  
+  .section-image3 {
+    width: 360px; /* 이미지 크기 조절 */
+    height: auto;
+    object-fit: contain;
+    margin-left: -240px; /* 텍스트와의 간격 조절 */
+  }
+  
+  .section .text {
+    max-width: 600px;
+  }
+  
+  .section button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #00CA9A;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  

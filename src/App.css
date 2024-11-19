@@ -43,44 +43,6 @@ html, body {
   background-color: #f0f0f0; 
 }
 
-.section {
-  padding: 30px;
-  display: flex;
-  padding-left: 280px;
-  align-items: center;
-  justify-content: space-between;
-  border-top: 100px solid #ffffff;
-  border-bottom: 100px solid #ffffff;
-}
-
-.section-image {
-  width: 200px;
-  height: auto;
-  object-fit: contain;
-  margin-left: 0px; /* 텍스트와의 간격 조절 */
-  margin-right: 0px;
-}
-
-.section-image3 {
-  width: 300px; /* 이미지 크기 조절 */
-  height: auto;
-  object-fit: contain;
-  margin-left: 50px; /* 텍스트와의 간격 조절 */
-}
-
-.section .text {
-  max-width: 600px;
-}
-
-.section button {
-  margin-top: 10px;
-  padding: 10px 15px;
-  background-color: #00CA9A;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
 .uphighlight-section {
   display: flex;
   align-items: center;
@@ -183,7 +145,7 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #e0e0e0;
+  background-color: #eaeaea;
   padding: 60px 250px; /* 좌우 여백 조정 */
   color: #333;
 }
@@ -191,41 +153,88 @@ html, body {
 .footer-left {
   flex: 1;
   text-align: left;
+  margin-right: 40px;
 }
 
 .footer-right {
   flex: 1;
-  text-align: right;
-  padding-left: 20px; /* 선과 오른쪽 콘텐츠 사이의 여백 추가 */
-  border-left: 1px solid #333; /* 중간 선 */
-  margin-left: 40px; /* 중간 선을 왼쪽으로 이동 */
+  text-align: left; /* 왼쪽 정렬로 변경 */
+  border-left: 1px solid #bdbdbd; /* 중간 선 색상 변경 */
+  padding-left: 30px; /* 선과 텍스트 간격*/
+  margin-left: 300px; /* 불필요한 여백 제거 */
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* 앱 다운로드와 아이콘 간격 */
+  align-items: flex-start;
+}
+
+.app-links {
+  display: flex;
+  justify-content: center; /* 부모 컨테이너에서 가운데 정렬 */
+  align-items: center; /* 아이콘과 텍스트 수직 정렬 */
+  gap: 10px; /* 버튼 간 간격 */
+  white-space: nowrap;
+}
+
+.link-button {
+  display: inline-flex;
+  align-items: center; /* 아이콘과 텍스트 수직 정렬 */
+  justify-content: center; /* 버튼 내부 내용 가운데 정렬 */
+  padding: 4px 10px;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  text-decoration: none;
+  gap: 2px; /* 아이콘과 텍스트 간 간격 */
+}
+
+.link-button img,
+.link-button svg {
+  width: 14px; /* 아이콘 크기 조정 */
+  height: 14px; /* 비율 유지 */
+  margin-right: 4px; /* 아이콘과 텍스트 간격 */
 }
 
 .footer-left p{
   margin: 0;
-  padding: 2px 0;
   font-size: 9pt;
+  display: block; /* 기본 설정 */
+  width: 100%; /* 너비를 충분히 확보 */
+}
+
+.single-line {
+  white-space: nowrap; /* 줄 바꿈 방지 */
 }
 
 .footer-right p {
+  font-weight: bold;
   margin: 0;
-  padding: 2px 0;
-}
-
-.footer-right {
-  border-left: 1px solid #333;
-  padding-left: 100px;
+  padding: 0px 0;
+  font-size: 14px;
 }
 
 .highlight-section {
-  background-color: #00CA9A; 
+  opacity: 0; /* 처음에는 보이지 않음 */
+  transform: translateY(50px); /* 아래에서 위로 이동 */
+  transition: opacity 1s ease, transform 1s ease; /* 부드러운 애니메이션 */
+  background: 
+    linear-gradient(135deg, #00CA9A, #f3ff6e);
   color: white;
   text-align: center;
   padding: 40px 20px;
   margin: 0 auto; /* 가운데 정렬 */
-  max-width: 700px;
+  max-width: 730px;
   border-radius: 36px;
   margin-bottom: 150px;
+  position: relative; /* 레이아웃 유지 */
+}
+
+.highlight-section.visible {
+  opacity: 1; /* 요소가 보이도록 */
+  transform: translateY(0); /* 원래 위치로 이동 */
 }
 
 .highlight-section h2 {
@@ -249,3 +258,20 @@ html, body {
   background-color: #f0f0f0; /* 호버 시 약간 어두운 배경색 */
 }
   
+.social-links {
+  display: flex;
+  gap: 20px; /* 아이콘 간 간격 */
+  justify-content: flex-start;
+  margin-top: 120px;
+  margin-left: -135px;
+}
+
+.social-icon {
+  font-size: 18px; /* 아이콘 크기 */
+  color: #555; /* 기본 색상 */
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #00CA9A; /* 호버 시 색상 변경 */
+}
