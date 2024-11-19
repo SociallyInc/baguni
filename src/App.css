@@ -227,8 +227,42 @@ html, body {
   border-radius: 36px;
   margin-bottom: 150px;
   position: relative; /* 레이아웃 유지 */
+  opacity: 0; /* 섹션 전체가 처음에는 보이지 않음 */
+  transform: translateY(50px); /* 아래에서 위로 이동 */
+  transition: opacity 1s ease, transform 1s ease; /* 기본 섹션 애니메이션 */
 }
 
+.highlight-section.visible {
+  opacity: 1; /* 섹션 보이기 */
+  transform: translateY(0); /* 원래 위치로 이동 */
+}
+
+.highlight-title {
+  opacity: 0; /* 처음에는 보이지 않음 */
+  transform: translateY(30px); /* 텍스트 이동 */
+  transition: opacity 2.5s ease, transform 2.5s ease; /* 텍스트 애니메이션: 더 느리게 */
+}
+
+.highlight-description {
+  opacity: 0; /* 처음에는 보이지 않음 */
+  transform: translateY(30px); /* 텍스트 이동 */
+  transition: opacity 2.5s ease, transform 2.5s ease; /* 텍스트 애니메이션: 더 느리게 */
+}
+
+.highlight-section.visible .highlight-title {
+  opacity: 1;
+  transform: translateY(0); /* 원래 위치 */
+}
+
+.highlight-section.visible .highlight-description {
+  opacity: 1;
+  transform: translateY(0); /* 원래 위치 */
+}
+
+.highlight-section.visible .highlight-button {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 .highlight-section h2 {
   margin-bottom: 10px;
