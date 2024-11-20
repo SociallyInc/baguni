@@ -9,7 +9,6 @@ import img3 from './assets/봉사자 정보.png';
 import img4 from './assets/지도_아동센터.png';
 import img5 from './assets/지도_유기견산책.png';
 import img6 from './assets/커뮤니티_후기.png';
-import { HashRouter as Router } from "react-router-dom";
 
 function App() {
   const handleDownloadClick = () => {
@@ -43,8 +42,6 @@ function App() {
   }, []);
 
   return (
-    <Router basename="/baguni">
-
     <div className="App">
       <Header />
       <div className="uphighlight-section">
@@ -131,7 +128,6 @@ function App() {
 
       <Footer />
     </div>
-    </Router>
   );
 }
 
