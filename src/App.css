@@ -324,3 +324,87 @@ html, body {
 .social-icon:hover {
   color: #00CA9A; /* 호버 시 색상 변경 */
 }
+
+/* 반응형 디자인 추가 */
+/* 화면 크기가 1000px 이하일 때 (모바일 크기) */
+@media screen and (max-width: 1000px) {
+  .footer {
+    flex-direction: column; /* 세로 정렬로 변경 */
+    align-items: flex-start; /* 왼쪽 정렬 */
+    padding: 50px;
+  }
+
+  .footer-right {
+    margin-top: 20px; /* 좌측 섹션과 간격 추가 */
+    border-left: none; /* 세로선 제거 */
+    border-top: 1px solid #ccc; /* 가로선 추가 */
+    padding-top: 20px; /* 가로선 위 여백 추가 */
+    margin-left: 0; /* 불필요한 마진 제거 */
+    padding-left: 0; /* 왼쪽 여백 제거 */
+  }
+  
+  .footer-left p {
+    margin: 0;
+    padding: 0px 0;
+    font-size: 16px;
+  }
+
+  .social-links {
+    margin-top: 20px; /* 소셜 미디어 아이콘 위에 여백 추가 */
+    margin-left: 3px; /* 왼쪽 여백 제거 */
+    width: 100%; /* 너비를 100%로 설정 */
+    justify-content: flex-start; /* 왼쪽 정렬 */
+  }
+
+  .uphighlight-section {
+    flex-direction: column; /* 세로 정렬 */
+    align-items: center; /* 내용 가운데 정렬 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+    padding-left: 1%; /* 양쪽 여백 축소 */
+    margin-top: 40px;
+  }
+
+  .phone-image {
+    position: relative; /* 절대 위치 해제 */
+    height: auto; /* 비율 유지 */
+    transform: none; /* 회전 제거 */
+  }
+
+  .phone-image-1,
+  .phone-image-2,
+  .phone-image-6 {
+    position: absolute;
+    opacity: 0; /* 초기에는 투명 */
+    animation: fadeIn 1s ease-out 0.2s forwards; /* 애니메이션 정의 */
+    transition: all 0.3s ease; /* 크기 변화 시 부드러운 전환 */
+  }
+
+  .phone-image-1 {
+    top: -5%;
+    left: 18%;
+    width: 25%; 
+    height: auto; /* 비율 유지 */
+    transform: rotate(-8deg) translateY(20px);
+  }
+
+  .phone-image-2 {
+    top: -8%;
+    left: 40%;
+    width: 25%; 
+    height: auto; /* 비율 유지 */
+    transform: rotate(0deg) translateY(20px);
+  }
+
+  .phone-image-6 {
+    top: -4%;
+    left: 62%;
+    width: 25%; 
+    height: auto; /* 비율 유지 */
+    transform: rotate(8deg) translateY(20px);
+  }
+
+  .phone-image:hover {
+    transform: scale(1.1); /* 이미지 확대 */
+  }
+
+}
