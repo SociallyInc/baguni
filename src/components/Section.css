@@ -2,9 +2,10 @@
     opacity: 0; /* 처음에는 보이지 않음 */
     transform: translateY(50px); /* 아래에서 위로 이동 */
     transition: opacity 1.2s ease, transform 1.2s ease; /* 1.2초로 느리게 */
-    padding: 30px;
+    padding: 5vw 5%;
     display: flex;
-    padding-left: 280px;
+    flex-wrap: wrap; /* 좁은 화면에서 줄바꿈 */
+    padding-left: 21%;
     align-items: center;
     justify-content: space-between;
     border-top: 80px solid #ffffff;
@@ -30,15 +31,15 @@
     width: 160px;
     height: auto;
     object-fit: contain;
-    margin-left: -100px; /* 텍스트와의 간격 조절 */
-    margin-right: 100px;
+    margin-left: -16%; /* 텍스트와의 간격 조절 */
+    margin-right: 16%;
   }
   
   .section-image3 {
     width: 360px; /* 이미지 크기 조절 */
     height: auto;
     object-fit: contain;
-    margin-left: -240px; /* 텍스트와의 간격 조절 */
+    margin-left: -36%; /* 텍스트와의 간격 조절 */
   }
   
   .section .text {
