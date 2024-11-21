@@ -380,7 +380,7 @@ html, body {
   }
 
   .phone-image-1 {
-    top: -25%;
+    top: 25%;
     left: 18%;
     width: 25%; 
     height: auto; /* 비율 유지 */
@@ -388,7 +388,7 @@ html, body {
   }
 
   .phone-image-2 {
-    top: -28%;
+    top: 28%;
     left: 40%;
     width: 25%; 
     height: auto; /* 비율 유지 */
@@ -396,7 +396,7 @@ html, body {
   }
 
   .phone-image-6 {
-    top: -24%;
+    top: 24%;
     left: 62%;
     width: 25%; 
     height: auto; /* 비율 유지 */
