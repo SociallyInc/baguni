@@ -380,24 +380,24 @@ html, body {
   }
 
   .phone-image-1 {
-    top: 16%;
-    left: 18%;
+    top: 12%;
+    left: 14%;
     width: 25%; 
     height: auto; /* 비율 유지 */
     transform: rotate(-8deg) translateY(20px);
   }
 
   .phone-image-2 {
-    top: 19%;
-    left: 40%;
+    top: 15%;
+    left: 36%;
     width: 25%; 
     height: auto; /* 비율 유지 */
     transform: rotate(0deg) translateY(20px);
   }
 
   .phone-image-6 {
-    top: 17%;
-    left: 62%;
+    top: 13%;
+    left: 59%;
     width: 25%; 
     height: auto; /* 비율 유지 */
     transform: rotate(8deg) translateY(20px);
