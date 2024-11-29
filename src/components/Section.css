@@ -88,7 +88,7 @@
         max-width: 100%; /* 화면 크기에 맞추기 */
         height: auto; /* 비율 유지 */
         margin-left: 0; /* 여백 제거 */
-        margin-right: 0; /* 여백 제거 */
+        margin-right: 10px; /* 여백 제거 */
         transform: scale(1.1); 
     }
 
@@ -97,5 +97,6 @@
       height: auto; /* 비율 유지 */
       margin-left: 0; /* 여백 제거 */
       margin-right: 0; /* 여백 제거 */
+      transform: scale(1.05); 
   }
 }
