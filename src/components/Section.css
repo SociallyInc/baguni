@@ -1,3 +1,4 @@
+
 .section {
     opacity: 0; /* 처음에는 보이지 않음 */
     transform: translateY(50px); /* 아래에서 위로 이동 */
@@ -27,19 +28,20 @@
     gap: 20px; /* 이미지 간 간격 */
   }
   
-  .section-image {
-    width: 160px;
-    height: auto;
-    object-fit: contain;
-    margin-left: -16%; /* 텍스트와의 간격 조절 */
-    margin-right: 16%;
+  .section-image,
+  .section-image3 {
+      width: 160px; /* 기본 크기 설정 */
+      height: auto;
+      object-fit: contain;
+      margin-left: -16%; /* 여백 조절 */
+      margin-right: 16%; /* 여백 조절 */
+      transform: scale(1.3); /* 1.3배 확대 */
+      transition: transform 0.5s ease; /* 확대 효과 추가 */
   }
   
   .section-image3 {
-    width: 360px; /* 이미지 크기 조절 */
-    height: auto;
-    object-fit: contain;
-    margin-left: -36%; /* 텍스트와의 간격 조절 */
+      width: 360px; /* 기본 크기 설정 */
+      margin-left: -36%; /* 여백 조절 */
   }
   
   .section .text {
@@ -77,17 +79,12 @@
     justify-content: center;
   }
   
-  .section-image3 {
-    max-width: 600px; /* 최대 크기 제한 */
-    height: auto; /* 비율 유지 */
-    margin-left: 0; /* 여백 제거 */
-  }
-  
-  .section-image {
-    max-width: 400px; /* 최대 크기 제한 */
-    height: auto; /* 비율 유지 */
-    margin-left: 0; /* 여백 제거 */
-    margin-right: 0; /* 여백 제거 */
-  }  
-  
+  .section-image,
+    .section-image3 {
+        max-width: 100%; /* 화면 크기에 맞추기 */
+        height: auto; /* 비율 유지 */
+        margin-left: 0; /* 여백 제거 */
+        margin-right: 0; /* 여백 제거 */
+        transform: scale(1.3); /* 확대 유지 */
+    }
 }
