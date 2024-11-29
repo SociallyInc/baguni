@@ -247,7 +247,7 @@ html, body {
   margin: 0 auto; /* 가운데 정렬 */
   max-width: 730px;
   border-radius: 36px;
-  margin-bottom: 150px;
+  margin-bottom: 80px;
   position: relative; /* 레이아웃 유지 */
   opacity: 0; /* 섹션 전체가 처음에는 보이지 않음 */
   transform: translateY(50px); /* 아래에서 위로 이동 */
