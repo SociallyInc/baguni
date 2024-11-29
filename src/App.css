@@ -20,7 +20,7 @@ html, body {
   padding: 6px;
   background-color: #00CA9A;
   box-sizing: border-box;
-  padding-left: 20%;
+  padding-left: 19%;
   padding-right: 20%;
   z-index: 1000;
 }
@@ -50,6 +50,8 @@ html, body {
   align-items: center;
   justify-content: space-between;
   padding-top: 0;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
   padding-left: 21%;
   background-color: #00CA9A;
   color: white;
@@ -247,7 +249,8 @@ html, body {
   margin: 0 auto; /* 가운데 정렬 */
   max-width: 730px;
   border-radius: 36px;
-  margin-bottom: 80px;
+  margin-top: 60px; /* 위와의 거리 확보 */
+  margin-bottom: 110px; /* 아래 여백 */
   position: relative; /* 레이아웃 유지 */
   opacity: 0; /* 섹션 전체가 처음에는 보이지 않음 */
   transform: translateY(50px); /* 아래에서 위로 이동 */
