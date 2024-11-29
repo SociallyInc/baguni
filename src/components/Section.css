@@ -9,6 +9,7 @@
     align-items: center;
     justify-content: space-between;
     border-top: 80px solid #ffffff;
+    border-bottom:10px solid #ffffff;
   }
   
   .section.visible {
