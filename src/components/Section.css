@@ -103,6 +103,7 @@
     display: flex;
     max-width: none; /* 최대 너비 제한 해제 */
     justify-content: center;
+    gap: 20px; /* 이미지 간 간격 */
   }
   
   .section-image{
@@ -110,15 +111,15 @@
         height: auto; /* 비율 유지 */
         margin-left: 0; /* 여백 제거 */
         margin-right: 10px; /* 여백 제거 */
-        transform: scale(1.5); 
+        transform: scale(1.24); 
     }
 
     .section-image2{
       max-width: 100%; /* 화면 크기에 맞추기 */
-      height: auto; /* 비율 유지 */
+      height: auto; /* 비율 유ㅛ지 */
       margin-left: 0; /* 여백 제거 */
       margin-right: 10px; /* 여백 제거 */
-      transform: scale(1.35); 
+      transform: scale(1.1); 
   }
 
     .section-image3 {
