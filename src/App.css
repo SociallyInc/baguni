@@ -138,7 +138,7 @@ html, body {
 
 .phone-image-1,
 .phone-image-2,
-.phone-image-6 {
+.phone-image-7 {
   position: absolute;
   opacity: 0; /* 초기에는 투명 */
   animation: fadeIn 1s ease-out 0.2s forwards; /* 애니메이션 정의 */
@@ -147,21 +147,28 @@ html, body {
 
 /* 기본 배치 (공간 넉넉한 경우) */
 .phone-image-1 {
-  top: 50px;
-  left: -340px;
+  width: 30%; /* 기존보다 더 큰 크기 */
+  height: auto; /* 비율 유지 */
+  top: 40px;
+  left: -440px;
   transform: rotate(-8deg) translateY(20px);
 }
 
 .phone-image-2 {
-  top: 40px;
-  left: -200px;
+  width: 30%; /* 기존보다 더 큰 크기 */
+  height: auto; /* 비율 유지 */
+  top: 20px;
+  left: -280px;
   transform: rotate(0deg) translateY(20px);
 }
 
-.phone-image-6 {
-  top: 50px;
-  left: -60px;
+.phone-image-7 {
+  top: 40px;
+  left: -120px;
+  width: 31%; /* 기존보다 더 큰 크기 */
+  height: auto; /* 비율 유지 */
   transform: rotate(8deg) translateY(20px);
+  object-fit: contain; /* 이미지 비율 유지하며 잘리지 않게 설정 */
 }
 
 .phone-image:hover {
@@ -379,7 +386,7 @@ html, body {
 
   .phone-image-1,
   .phone-image-2,
-  .phone-image-6 {
+  .phone-image-7 {
     position: absolute;
     opacity: 0; /* 초기에는 투명 */
     animation: fadeIn 1s ease-out 0.2s forwards; /* 애니메이션 정의 */
@@ -402,7 +409,7 @@ html, body {
     transform: rotate(0deg) translateY(20px);
   }
 
-  .phone-image-6 {
+  .phone-image-7 {
     top: 13%;
     left: 59%;
     width: 25%; 

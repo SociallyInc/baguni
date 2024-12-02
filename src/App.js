@@ -3,12 +3,15 @@ import './App.css';
 import Header from './components/Header';
 import Section from './components/Section';
 import Footer from './components/Footer';
-import img1 from './assets/봉사 모집.png';
-import img2 from './assets/봉사동아리소개.png';
+import img1 from './assets/마이페이지none.png';
+import img2 from './assets/빵none.png';
 import img3 from './assets/봉사자 정보.png';
-import img4 from './assets/지도_아동센터.png';
-import img5 from './assets/지도_유기견산책.png';
-import img6 from './assets/커뮤니티_후기.png';
+import img4 from './assets/지도.png';
+//import img5 from './assets/지도_유기견산책.png';
+import img6 from './assets/커뮤니티.png';
+import img7 from './assets/종류.png';
+import img8 from './assets/봉사활동검색.png';
+import img9 from './assets/봉사활동 후기.png';
 import { HashRouter } from "react-router-dom";
 
 function App() {
@@ -57,7 +60,7 @@ function App() {
         <div className="image-container">
           <img src={img1} alt="img 1" className="phone-image phone-image-1" />
           <img src={img2} alt="img 2" className="phone-image phone-image-2" />
-          <img src={img6} alt="img 6" className="phone-image phone-image-6" />
+          <img src={img7} alt="img 7" className="phone-image phone-image-7" />
         </div>
       </div>
 
@@ -76,8 +79,7 @@ function App() {
             봉사 가능한 복지시설을 확인해보세요.
           </>
         }
-        imgSrc1={img4}
-        imgSrc2={img5}
+        imgSrc4={img4}
       />
 
       <Section
@@ -95,7 +97,7 @@ function App() {
             선호 일정에 맞춰 근처에서 쉽게 찾아드릴께요.
           </>
         }
-        imgSrc3={img3}
+        imgSrc3={img8}
       />
 
       <Section
@@ -109,7 +111,7 @@ function App() {
             커뮤니티에 공유해보세요!
           </>
         }
-        imgSrc1={img2}
+        imgSrc1={img9}
         imgSrc2={img6}
       />
 
