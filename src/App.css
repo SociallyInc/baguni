@@ -164,8 +164,8 @@ html, body {
 
 .phone-image-7 {
   top: 40px;
-  left: -120px;
-  width: 31%; /* 기존보다 더 큰 크기 */
+  left: -122px;
+  width: 32%; /* 기존보다 더 큰 크기 */
   height: auto; /* 비율 유지 */
   transform: rotate(8deg) translateY(20px);
   object-fit: contain; /* 이미지 비율 유지하며 잘리지 않게 설정 */
@@ -412,7 +412,7 @@ html, body {
   .phone-image-7 {
     top: 13%;
     left: 59%;
-    width: 25%; 
+    width: 25.6%; 
     height: auto; /* 비율 유지 */
     transform: rotate(8deg) translateY(20px);
   }
