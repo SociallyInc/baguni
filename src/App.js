@@ -12,6 +12,7 @@ import img6 from './assets/커뮤니티.png';
 import img7 from './assets/종류.png';
 import img8 from './assets/봉사활동검색.png';
 import img9 from './assets/봉사활동 후기.png';
+import img10 from './assets/highlight_section_img.png';
 import { HashRouter } from "react-router-dom";
 
 function App() {
@@ -58,9 +59,7 @@ function App() {
           <button onClick={handleDownloadClick}><strong>앱 다운로드</strong></button>
         </div>
         <div className="image-container">
-          <img src={img1} alt="img 1" className="phone-image phone-image-1" />
-          <img src={img2} alt="img 2" className="phone-image phone-image-2" />
-          <img src={img7} alt="img 7" className="phone-image phone-image-7" />
+          <img src={img10} alt="img 1" className="phone-image phone-image-1" />
         </div>
       </div>
 
