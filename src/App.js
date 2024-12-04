@@ -17,7 +17,7 @@ import { HashRouter } from "react-router-dom";
 
 function App() {
   const handleDownloadClick = () => {
-    window.location.href = "https://play.google.com/store/games?hl=ko";
+    window.location.href = "https://play.google.com/store/search?q=%EB%B0%94%EA%B5%AC%EB%8B%88&c=apps";
   };
 
   const highlightRef = useRef(null);
