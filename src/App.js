@@ -53,8 +53,8 @@ function App() {
       <div className="uphighlight-section">
         <div>
           <p>복지시설과 근처 사람들과의 따뜻한 연결</p>
-          <h2><strong>우리 동네에서</strong></h2>
-          <h2><strong>봉사, 후원, 소통을 더 쉽게!</strong></h2>
+          <h2><strong>우리 동네에서 봉사,</strong></h2>
+          <h2><strong>후원, 소통을 더 쉽게!</strong></h2>
           <br />
           <button onClick={handleDownloadClick}><strong>앱 다운로드</strong></button>
         </div>
@@ -84,16 +84,16 @@ function App() {
       <Section
         title={
           <>
-            나의 조건과 관심사에 맞는
+            나의 조건과 관심사에 맞는 봉사나
             <br />
-            봉사나 기부처를 찾는게 어렵지 않으신가요?
+            기부처를 찾는게 어렵지 않으신가요?
           </>
         }
         description={
           <>
-            내 마음에 드는 기부처와 봉사 유형, 그리고
+            내 마음에 드는 기부처와 봉사 유형, 선호 일정에에
             <br />
-            선호 일정에 딱 맞는 기회를 근처에서 손쉽게 찾아드려요.
+            딱 맞는 기회를 근처에서 손쉽게 찾아드려요.
           </>
         }
         imgSrc3={img8}
@@ -104,9 +104,11 @@ function App() {
         description={
           <>
             주변 친구들과 그룹을 만들어
+            <br />
             봉사활동을 진행하고
             <br />
             나의 활동을 바구니
+            <br />
             커뮤니티에 공유해보세요!
           </>
         }
