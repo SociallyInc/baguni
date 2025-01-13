@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/baguni/static/css/main.bbc2066d.css",
-    "main.js": "/baguni/static/js/main.3f60936a.js",
+    "main.js": "/baguni/static/js/main.c9c73385.js",
     "static/js/453.842e6e00.chunk.js": "/baguni/static/js/453.842e6e00.chunk.js",
     "static/media/highlight_section_img.png": "/baguni/static/media/highlight_section_img.4b0b8eff33a3901ffe30.png",
     "static/media/마이페이지none.png": "/baguni/static/media/마이페이지none.4c937b844851ce6b034b.png",
@@ -14,11 +14,11 @@
     "static/media/봉사자 정보.png": "/baguni/static/media/봉사자 정보.9b33bb23c50a342b12b5.png",
     "index.html": "/baguni/index.html",
     "main.bbc2066d.css.map": "/baguni/static/css/main.bbc2066d.css.map",
-    "main.3f60936a.js.map": "/baguni/static/js/main.3f60936a.js.map",
+    "main.c9c73385.js.map": "/baguni/static/js/main.c9c73385.js.map",
     "453.842e6e00.chunk.js.map": "/baguni/static/js/453.842e6e00.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bbc2066d.css",
-    "static/js/main.3f60936a.js"
+    "static/js/main.c9c73385.js"
   ]
 }
