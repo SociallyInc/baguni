@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/baguni/static/css/main.bbc2066d.css",
-    "main.js": "/baguni/static/js/main.c9c73385.js",
+    "main.css": "/baguni/static/css/main.fddc5f14.css",
+    "main.js": "/baguni/static/js/main.c9682f1a.js",
     "static/js/453.842e6e00.chunk.js": "/baguni/static/js/453.842e6e00.chunk.js",
     "static/media/highlight_section_img.png": "/baguni/static/media/highlight_section_img.4b0b8eff33a3901ffe30.png",
     "static/media/마이페이지none.png": "/baguni/static/media/마이페이지none.4c937b844851ce6b034b.png",
@@ -10,15 +10,16 @@
     "static/media/봉사활동 후기.png": "/baguni/static/media/봉사활동 후기.b1ca060cbc2fa5f9d87a.png",
     "static/media/종류.png": "/baguni/static/media/종류.457cf95c778d9c621593.png",
     "static/media/봉사활동검색.png": "/baguni/static/media/봉사활동검색.13288e38123a7a7511d9.png",
+    "static/media/후원.png": "/baguni/static/media/후원.09eac3eee070cac4fde4.png",
     "static/media/빵none.png": "/baguni/static/media/빵none.a226f84e6189795e3682.png",
     "static/media/봉사자 정보.png": "/baguni/static/media/봉사자 정보.9b33bb23c50a342b12b5.png",
     "index.html": "/baguni/index.html",
-    "main.bbc2066d.css.map": "/baguni/static/css/main.bbc2066d.css.map",
-    "main.c9c73385.js.map": "/baguni/static/js/main.c9c73385.js.map",
+    "main.fddc5f14.css.map": "/baguni/static/css/main.fddc5f14.css.map",
+    "main.c9682f1a.js.map": "/baguni/static/js/main.c9682f1a.js.map",
     "453.842e6e00.chunk.js.map": "/baguni/static/js/453.842e6e00.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bbc2066d.css",
-    "static/js/main.c9c73385.js"
+    "static/css/main.fddc5f14.css",
+    "static/js/main.c9682f1a.js"
   ]
 }
