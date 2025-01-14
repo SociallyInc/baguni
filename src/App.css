@@ -147,10 +147,10 @@ html, body {
 
 /* 기본 배치 (공간 넉넉한 경우) */
 .phone-image-1 {
-  width: 80%; /* 기존보다 더 큰 크기 */
+  width: 70%; /* 기존보다 더 큰 크기 */
   height: auto; /* 비율 유지 */
-  top: 5px;
-  left: -480px;
+  top: 30px;
+  left: -300px;
   transform: rotate(-8deg) translateY(20px);
 }
 

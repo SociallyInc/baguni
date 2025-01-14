@@ -13,6 +13,7 @@ import img7 from './assets/종류.png';
 import img8 from './assets/봉사활동검색.png';
 import img9 from './assets/봉사활동 후기.png';
 import img10 from './assets/highlight_section_img.png';
+import img11 from './assets/후원.png';
 import { HashRouter } from "react-router-dom";
 
 function App() {
@@ -86,30 +87,27 @@ function App() {
           <>
             나의 조건과 관심사에 맞는 봉사나
             <br />
-            기부처를 찾는게 어렵지 않으신가요?
+            기부처를 찾는게 어렵지 않나요?
           </>
         }
         description={
           <>
-            내 마음에 드는 기부처와 봉사 유형, 선호 일정에에
+            내 마음에 드는 기부처와 봉사 유형, 선호 일정에
             <br />
             딱 맞는 기회를 근처에서 손쉽게 찾아드려요.
           </>
         }
         imgSrc3={img8}
+        imgSrc5={img11}
       />
 
       <Section
         title="혼자 봉사하는 거 지겨우시죠?"
         description={
           <>
-            주변 친구들과 그룹을 만들어
+            주변 친구들과 그룹을 만들어 봉사활동을 진행하고
             <br />
-            봉사활동을 진행하고
-            <br />
-            나의 활동을 바구니
-            <br />
-            커뮤니티에 공유해보세요!
+            나의 활동을 바구니 커뮤니티에 공유해보세요!
           </>
         }
         imgSrc1={img9}
